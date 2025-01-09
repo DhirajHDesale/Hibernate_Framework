@@ -24,6 +24,7 @@ public class JavaConfig {
 			properties.put(Environment.SHOW_SQL, true);
 
 			configuration.setProperties(properties);
+			configuration.addAnnotatedClass(com.data.first_program.Student3.class);
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 					.applySettings(configuration.getProperties()).build();
 
